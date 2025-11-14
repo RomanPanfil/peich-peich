@@ -1,0 +1,99 @@
+@import "vars";
+
+@import "normalize";
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $basefont, sans-serif;
+  line-height: 1.42;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // Резиновая верстка для desktop (1440px и выше)
+  // font-size меняется пропорционально ширине viewport
+  font-size: $base-font-size + 0px;
+  
+  @media (min-width: $desktop-bp) {
+    // Масштабируем font-size пропорционально viewport
+    // 1vw = 1% от ширины viewport
+    // При 1440px: 16px = 1.1111vw (16 / 1440 * 100)
+    font-size: calc(100vw / #{$desktop-base} * #{$base-font-size});
+  }
+  
+  // Фиксированный font-size для tablet-large (960px - 1439px)
+  @media (max-width: #{$desktop-breakpoint - 1}px) {
+    font-size: $base-font-size + 0px;
+  }
+  
+  // Фиксированный font-size для tablet (640px - 959px)
+  @media (max-width: #{$tablet-large-breakpoint - 1}px) {
+    font-size: $base-font-size + 0px;
+  }
+  
+  // Фиксированный font-size для mobile (до 639px)
+  @media (max-width: #{$tablet-breakpoint - 1}px) {
+    font-size: $base-font-size + 0px;
+  }
+}
+
+body {
+  height: 100%;
+  color: $dark_brown;
+  font-family: $basefont, sans-serif;
+  font-weight: $weight;
+  font-size: p2r($fontsize);
+  line-height: $lh;
+  background-color: $white;
+  scroll-behavior: smooth;  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch; 
+  overflow-anchor: none;
+  overflow-scrolling: touch;
+}
+
+a, label{
+	-webkit-tap-highlight-color: transparent;
+}
+
+
+
+
+
+// @import "../images/sprite/sprite";
+
+input::-ms-clear {
+  display: none;
+}
+
+/* Для Safari */
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+@import "ui";
+
+@import "grid";
+
+@import "header";
+
+@import "main";
+
+@import "footer";
+
+@import "popups";
+
+@import "article";

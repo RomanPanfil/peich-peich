@@ -1,0 +1,193 @@
+.mfp-popup {
+    &-title {     
+        font-weight: 500;
+        font-size: p2r(30);
+        line-height: 1.1;
+        letter-spacing: -0.03rem;
+        margin-bottom: p2r(18);       
+
+        @media(max-width: 1140px) {
+            font-size: p2r(24);
+        }
+
+        @media(max-width: 1024px) {
+            font-size: p2r(20);            
+        }
+    }
+
+    &-description {       
+        letter-spacing: -0.03rem;
+        color: $light_brown;
+        margin-bottom: p2r(10);
+
+        @media(max-width: 1024px) {
+            font-size: p2r(14);
+            margin-bottom: p2r(20);
+        }
+
+        @media(max-width: 599px) {           
+            margin-bottom: p2r(28);
+        }
+    }
+}
+.popup-feedback {
+    background-color: $white;
+    max-width: p2r(550);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media(max-width: 1024px) {
+        max-width: p2r(508);
+    }
+
+    .mfp-content {       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mfp-inner {
+        padding: p2r(60) p2r(43) p2r(56) p2r(43);
+
+        @media(max-width: 1024px) {
+            padding: p2r(40) p2r(33) p2r(40) p2r(33);
+        }
+
+        @media(max-width: 599px) {
+            padding: p2r(30) p2r(5) p2r(22) p2r(5);
+        }
+    }    
+
+    .mfp-popup-title {       
+        padding-left: p2r(15);
+        padding-right: p2r(15);
+
+        @media(max-width: 1140px) {
+            font-size: p2r(24);
+        }
+
+        @media(max-width: 1024px) {
+            font-size: p2r(20);          
+        }
+    }
+}
+
+.popup-success {
+    background-color: $white;
+    max-width: p2r(550);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media(max-width: 1024px) {
+        max-width: p2r(508);
+    }
+
+    .mfp-content {       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mfp-inner {
+        padding: p2r(30);
+
+        @media(max-width: 1024px) {
+            padding: p2r(30);
+        }
+
+        @media(max-width: 599px) {
+            padding: p2r(15);
+        }
+    }
+
+    .mfp-popup-description {
+        margin-bottom: p2r(32);
+
+        @media(max-width: 1024px) {
+            margin-bottom: p2r(56);
+        }
+    }
+}
+
+.popup-trouble {
+    background-color: $white;
+    max-width: p2r(550);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media(max-width: 1024px) {
+        max-width: p2r(508);
+    }
+
+    .mfp-content {       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mfp-inner {
+        padding: p2r(30);
+
+        @media(max-width: 1024px) {
+            padding: p2r(30);
+        }
+
+        @media(max-width: 599px) {
+            padding: p2r(15);
+        }
+    }
+
+    .mfp-popup-description {      
+        padding-right: p2r(20);        
+    }
+
+    &-tel {
+        display: inline-block;
+        color:$dark_brown;
+        font-weight: 500;
+        font-size: p2r(30);
+        letter-spacing: -0.03rem;
+        margin-bottom: p2r(26);
+
+        @media(max-width: 1140px) {
+            font-size: p2r(24);
+        }
+
+        @media(max-width: 1024px) {
+            font-size: p2r(20);
+            margin-bottom: p2r(68);
+        }
+
+        @media(max-width: 599px) {           
+            margin-bottom: p2r(24);
+        }
+    }
+}
+
+.mfp-close {
+    width: p2r(34) !important;
+    height: p2r(34) !important;
+    top: p2r(30) !important;
+    right: p2r(30) !important;
+    font-size: p2r(0) !important;
+    background-image: url("data:image/svg+xml,%3Csvg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25.5 8.5L8.5 25.5' stroke='%230C4532' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.5 8.5L25.5 25.5' stroke='%230C4532' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") !important;
+    background-size: p2r(34) p2r(34) !important;
+    background-position: center !important;     
+    background-repeat: no-repeat !important;
+    opacity: 1 !important;
+    transition: opacity 0.3s;
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            opacity: 0.7 !important;
+        }
+    }
+
+    @media(max-width: 599px) {
+        top: p2r(15) !important;
+        right: p2r(15) !important;
+    }
+}

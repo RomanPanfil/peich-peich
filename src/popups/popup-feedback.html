@@ -1,0 +1,131 @@
+<div class="mfp-popup popup-feedback mfp-anim">
+  <div class="mfp-inner">
+    <div class="mfp-popup-title">
+      Заполните форму,
+      <br>
+      и менеджер с вами свяжется
+    </div>
+    <form class="quiz-form">
+      <div class="quiz-fields">
+        <div class="ui-form-field">
+          <input
+            type="text"
+            class="ui-input"
+            placeholder="Имя*"
+            required
+          >
+        </div>
+        <div class="ui-form-field">
+          <input
+            type="tel"
+            id="phone"
+            class="ui-input ui-input__phone"
+            required
+          >
+        </div>
+      </div>
+      <div class="quiz-agreement">
+        <label class="ui-checkbox-wrapper min">
+          <input type="checkbox" class="ui-checkbox bordered">
+          <span class="color-grey">
+            Я даю согласие на
+            <a href="#" class="color-grey">обработку персональных данных</a>
+          </span>
+        </label>
+        <label class="ui-checkbox-wrapper min">
+          <input type="checkbox" class="ui-checkbox bordered">
+          <span class="color-grey">
+            Я соглашаюсь с
+            <a href="#" class="color-grey">политикой конфиденциальности</a>
+          </span>
+        </label>
+      </div>
+      <div class="quiz-nav quiz-nav__bottom ui-nav">
+        <button type="submit" class="ui-btn ui-btn__transparent ui-btn__middle">
+          Отправить
+          <svg class="ui-btn-icon">
+            <use xlink:href="svg/svg/symbols.svg#plus"/>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+  <script>
+    $('.ui-select, .ui-checkbox').styler();
+
+    (function() {
+    const phoneInputs = document.querySelectorAll(".ui-input__phone");
+    
+    phoneInputs.forEach(input => {
+      const iti = window.intlTelInput(input, {
+        loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@25.10.1/build/js/utils.js"),
+        initialCountry: "ru",
+        separateDialCode: true,
+        formatOnDisplay: true,
+        autoPlaceholder: "off"
+      });
+      
+      // Устанавливаем фиксированный placeholder
+      input.placeholder = '(000) 000-00-00*';
+      
+      // Маска для российского номера
+      function formatRussianPhone(value) {
+        const cleaned = value.replace(/\D/g, '');
+        
+        let formatted = '';
+        for (let i = 0; i < cleaned.length && i < 10; i++) {
+          if (i === 0) formatted += '(';
+          if (i === 3) formatted += ') ';
+          if (i === 6) formatted += '-';
+          if (i === 8) formatted += '-';
+          formatted += cleaned[i];
+        }
+        
+        return formatted;
+      }
+      
+      // Обработка ввода
+      input.addEventListener('input', function(e) {
+        const countryData = iti.getSelectedCountryData();
+        
+        if (countryData.iso2 === 'ru') {
+          const cursorPos = this.selectionStart;
+          const oldLength = this.value.length;
+          
+          // Форматируем значение
+          this.value = formatRussianPhone(this.value);
+          
+          // Корректируем позицию курсора
+          const newLength = this.value.length;
+          const newCursorPos = cursorPos + (newLength - oldLength);
+          this.setSelectionRange(newCursorPos, newCursorPos);
+        }
+      });
+      
+      // Обработка удаления
+      input.addEventListener('keydown', function(e) {
+        const countryData = iti.getSelectedCountryData();
+        
+        if (countryData.iso2 === 'ru' && e.key === 'Backspace') {
+          const cursorPos = this.selectionStart;
+          const value = this.value;
+          
+          if (cursorPos > 0) {
+            const prevChar = value[cursorPos - 1];
+            if (prevChar === '(' || prevChar === ')' || prevChar === ' ' || prevChar === '-') {
+              e.preventDefault();
+              const cleaned = value.replace(/\D/g, '');
+              const newCleaned = cleaned.slice(0, -1);
+              this.value = formatRussianPhone(newCleaned);
+              
+              // Позиционируем курсор в конец
+              const newPos = this.value.length;
+              this.setSelectionRange(newPos, newPos);
+            }
+          }
+        }
+      });
+    });
+  })();
+  </script>
+</div>

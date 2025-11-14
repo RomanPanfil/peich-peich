@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/jquery.formstyler.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.10.1/build/css/intlTelInput.css">
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+      type="text/css"
+      media="all"
+    >
+    <script src="./scripts/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/magnific-popup.min.css">
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: 'Golos Text';
+        src: local('Golos Text'), local('Golos Text Regular'),
+          url('./fonts/Golos-Text/Golos-Text_Regular.woff2') format('woff2'),
+          url('./fonts/Golos-Text/Golos-Text_Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Golos Text';
+        src: local('Golos Text Medium'), local('Golos-Text-Medium'),
+          url('./fonts/Golos-Text/Golos-Text_Medium.woff2') format('woff2'),
+          url('./fonts/Golos-Text/Golos-Text_Medium.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Golos Text';
+        src: local('Golos Text Bold'), local('Golos-Text-Bold'),
+          url('./fonts/Golos-Text/Golos-Text_Bold.woff2') format('woff2'),
+          url('./fonts/Golos-Text/Golos-Text_Bold.woff') format('woff');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <ul>
+              <li>
+                <a href="#services">Услуги</a>
+              </li>
+              <li>
+                <a href="#about">О компании</a>
+              </li>
+              <li>
+                <a href="#articles">Блог</a>
+              </li>
+              <li>
+                <a href="#footer">Контакты</a>
+              </li>
+            </ul>
+            <a href="#" class="header__logo">
+              <img src="./images/logo.svg" alt="logo" loading="lazy">
+            </a>
+            <div class="header__contacts">
+              <div class="header__contacts-tel">
+                <a href="tel:+74957997185">+7(495) 799-71-85</a>
+                <span>Москва и область</span>
+              </div>
+              <div class="header__contacts-consult">
+                <a href="#" class="ui-btn ui-btn-min ui-btn__transparent mfp-link" data-href="./popups/popup-feedback.html">
+                  Получить консультацию
+                  <svg class="ui-btn-icon">
+                    <use xlink:href="svg/svg/symbols.svg#plus"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <button class="header-burger">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="main article__page">
+        <div class="container">
+          <div class="breadcrumbs">
+            <ul>
+              <li>
+                <a href="#">Главная</a>
+              </li>
+              <li>
+                <a href="#">Согласие на обработку персональных данных</a>
+              </li>
+            </ul>
+          </div>
+          <article class="article">
+            <h1>
+              Согласие на обработку персональных данных
+            </h1>
+            <div class="article__content article__content_agree">
+              <p>
+                Настоящим, оставляя заявку на сайте
+                <a href="https://rezhimpoleta.ru">https://rezhimpoleta.ru</a>
+                , я, действуя своей волей и в своём интересе,
+                  подтверждаю согласие на обработку моих персональных данных индивидуальным предпринимателем
+                <a href="#">
+                  Андреевой Светланой
+                      Евгеньевной (ИНН: 344 113 267 990, ОГРНИП: 319 344 300 110 475)
+                </a>
+                , являющимся оператором персональных данных в
+                  соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных».
+              </p>
+              <p>
+                1. Персональные данные, на обработку которых даётся согласие Фамилия, имя, отчество;
+              </p>
+              <ul>
+                <li>
+                  Номер телефона;
+                </li>
+                <li>
+                  Адрес электронной почты (e-mail);
+                </li>
+                <li>
+                  Файлы cookie и иные данные, автоматически передаваемые сервисами интернета.
+                </li>
+              </ul>
+              <p>
+                2. Цели обработки персональных данных обеспечение обратной связи с пользователем;
+              </p>
+              <ul>
+                <li>
+                  обработка заявок и запросов;
+                </li>
+                <li>
+                  запись на услуги;
+                </li>
+                <li>
+                  информирование об услугах и мероприятиях компании;
+                </li>
+                <li>
+                  рассылка информации рекламного и новостного характера (при согласии пользователя)
+                </li>
+              </ul>
+              <p>
+                3. Действия с персональными данными
+                <br>
+                Оператор вправе осуществлять сбор, запись, систематизацию, хранение, уточнение, использование,
+                передачу (в том числе третьим лицам, указанным ниже), обезличивание и удаление персональных данных.
+              </p>
+              <p>
+                4. Передача данных третьим лицам
+                <br>
+                Персональные данные могут быть переданы третьим лицам исключительно в целях,
+                 указанных выше, в том числе сервисам аналитики и веб-мастеринга:
+              </p>
+              <ul>
+                <li>
+                  Яндекс.Метрика;
+                </li>
+                <li>
+                  Яндекс.Вебмастер.
+                </li>
+                <p>
+                  Передача осуществляется с соблюдением требований законодательства РФ.
+                </p>
+              </ul>
+              <p>
+                5. Срок действия согласия
+                <br>
+                Согласие предоставляется на неопределённый срок и действует до момента его отзыва субъектом персональных данных.
+              </p>
+              <p>
+                6. Отзыв согласия
+                <br>
+                Субъект персональных данных имеет право отозвать своё согласие в любой момент, направив письменное уведомление на электронный адрес:
+                <a href="mailto:rezhimpoletaru@yandex.ru"> rezhimpoletaru@yandex.ru.</a>
+              </p>
+              <p>
+                7. Дополнительно
+                <br>
+                Обработка персональных данных осуществляется в соответствии с Политикой конфиденциальности, размещённой на сайте:
+                <a href="https://rezhimpoleta.ru/confidentiality"> https://rezhimpoleta.ru/confidentiality.</a>
+              </p>
+              <br>
+            </div>
+          </article>
+          <a href="#" class="ui-btn ui-btn__middle ui-btn__primary">
+            На главную
+            <svg class="ui-btn-icon">
+              <use xlink:href="svg/svg/symbols.svg#plus"/>
+            </svg>
+          </a>
+        </div>
+      </main>
+      <footer class="footer" id="footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer-top">
+              <a href="#" class="footer-logo">
+                <img src="./images/logo-footer.svg" alt="logo" loading="lazy">
+              </a>
+              <div class="footer-top-content">
+                <div class="footer-block">
+                  <div class="footer-label">Навигация</div>
+                  <ul>
+                    <li>
+                      <a href="#services">Услуги</a>
+                    </li>
+                    <li>
+                      <a href="#about">О компании</a>
+                    </li>
+                    <li>
+                      <a href="#articles">Блог</a>
+                    </li>
+                    <li>
+                      <a href="#footer">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-block">
+                  <div class="footer-label">Контакты</div>
+                  <div class="footer-contacts">
+                    <a href="tel:+74957997185" class="footer-contacts-item">+7(495) 799-71-85</a>
+                    <a href="mailto:@email.com" class="footer-contacts-item">@email.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div class="footer-bottom-left">
+                <div class="footer-bottom-block">
+                  <div class="footer-info-item">
+                    <div class="footer-label">ИНН</div>
+                    <div>000000000</div>
+                  </div>
+                  <div class="footer-info-item">
+                    <div class="footer-label">ОГРН</div>
+                    <div>000000000</div>
+                  </div>
+                </div>
+                <div class="footer-bottom-block footer-bottom-block__column">
+                  <div class="footer-info-item">
+                    <a href="#">Политика обработки персональных данных</a>
+                  </div>
+                  <div class="footer-info-item">
+                    <a href="#">Политика конфиденциальности</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-bottom-right">
+                <div class="footer-bottom-right-block">
+                  Все права защищены
+                </div>
+                <a href="#" class="footer-bottom-right-block nowrap">
+                  <svg>
+                    <use xlink:href="svg/svg/symbols.svg#union"/>
+                  </svg>
+                  Разработка сайта
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="menu-overlay">
+        <div class="menu">
+          <div class="menu-logo">
+            <img src="./images/logo.svg" alt="logo" loading="lazy">
+            <button class="menu-close">
+              <span></span>
+            </button>
+          </div>
+          <div class="menu-nav">
+            <ul>
+              <li>
+                <a href="#services">Услуги</a>
+              </li>
+              <li>
+                <a href="#about">О компании</a>
+              </li>
+              <li>
+                <a href="#articles">Блог</a>
+              </li>
+              <li>
+                <a href="#footer">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__contacts">
+            <div class="menu__contacts-tel">
+              <a href="tel:+74957997185">+7(495) 799-71-85</a>
+              <span>Москва и область</span>
+            </div>
+            <div class="menu__contacts-consult">
+              <a href="#" class="ui-btn ui-btn__transparent">
+                Получить консультацию
+                <svg class="ui-btn-icon">
+                  <use xlink:href="svg/svg/symbols.svg#plus"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="go-up">
+      <div class="container go-up-container">
+        <button class="go-up-btn">
+          <svg class="go-up-icon">
+            <use xlink:href="svg/svg/symbols.svg#arrow-up"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./scripts/intlTelInput.min.js"></script>
+    <script src="./scripts/swiper-bundle.min.js"></script>
+    <script src="./scripts/jquery.formstyler.js"></script>
+    <script src="./scripts/jquery.magnific-popup.min.js"></script>
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>

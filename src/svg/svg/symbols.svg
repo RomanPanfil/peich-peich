@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
+	
+		<symbol id="arrow-right" viewBox="0 0 18 18">
+			<path d="M3.75 9h10.5M9 3.75L14.25 9 9 14.25"></path>
+		</symbol>
+	
+		<symbol id="arrow-up" viewBox="0 0 11 12">
+			<path d="M11 6.258L9.711 7.324 6.317 3.218V12H4.683V3.218L1.271 7.324 0 6.258 5.482 0 11 6.258z" fill="#0C4532"></path>
+		</symbol>
+	
+		<symbol id="plus" viewBox="0 0 18 18">
+			<path d="M9 3.75v10.5M3.75 9h10.5"></path>
+		</symbol>
+	
+		<symbol id="union" viewBox="0 0 27 14">
+			<path d="M8.331 12.794L6.001 0H0v13.5h1.34V.413L3.724 13.5h11.394L17.352.378V13.5h9.65V0H10.516L8.33 12.794z" fill="#F7F7F7"></path>
+		</symbol>
+	
+</svg>

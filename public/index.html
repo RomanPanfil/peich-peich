@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/jquery.formstyler.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/intlTelInput.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.10.1/build/css/intlTelInput.css"> -->
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+      type="text/css"
+      media="all"
+    >
+    <script src="./scripts/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/magnific-popup.min.css">
+    <!-- ScrollTrigger -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>     -->
+    <script src="./scripts/ScrollTrigger.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script> -->
+    <script src="./scripts/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: 'Golos Text';
+        src: local('Golos Text'), local('Golos Text Regular'),
+          url('./fonts/Golos-Text/Golos-Text_Regular.woff2') format('woff2'),
+          url('./fonts/Golos-Text/Golos-Text_Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Golos Text';
+        src: local('Golos Text Medium'), local('Golos-Text-Medium'),
+          url('./fonts/Golos-Text/Golos-Text_Medium.woff2') format('woff2'),
+          url('./fonts/Golos-Text/Golos-Text_Medium.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Golos Text';
+        src: local('Golos Text Bold'), local('Golos-Text-Bold'),
+          url('./fonts/Golos-Text/Golos-Text_Bold.woff2') format('woff2'),
+          url('./fonts/Golos-Text/Golos-Text_Bold.woff') format('woff');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <ul>
+              <li>
+                <a href="#services">Услуги</a>
+              </li>
+              <li>
+                <a href="#about">О компании</a>
+              </li>
+              <li>
+                <a href="#articles">Блог</a>
+              </li>
+              <li>
+                <a href="#footer">Контакты</a>
+              </li>
+            </ul>
+            <a href="#" class="header__logo">
+              <img src="./images/logo.svg" alt="logo" loading="lazy">
+            </a>
+            <div class="header__contacts">
+              <div class="header__contacts-tel">
+                <a href="tel:+74957997185">+7(495) 799-71-85</a>
+                <span>Москва и область</span>
+              </div>
+              <div class="header__contacts-consult">
+                <a href="#" class="ui-btn ui-btn-min ui-btn__transparent mfp-link" data-href="./popups/popup-feedback.html">
+                  Получить консультацию
+                  <svg class="ui-btn-icon">
+                    <use xlink:href="svg/svg/symbols.svg#plus"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <button class="header-burger">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="banner">
+          <div class="container">
+            <div class="banner-wrapper">
+              <div class="banner-content">
+                <div class="banner-title animate-group">
+                  <div class="banner-title-main animate-fade-up-delay">
+                    Покупка недвижимости по военной ипотеке
+                  </div>
+                  <div class="banner-title-sub animate-fade-up-delay">
+                    Сопровождаем от совместной разработки ТЗ и поиска решения до этапа регистрации
+                  </div>
+                </div>
+                <div class="banner-options">
+                  <div class="banner-option">
+                    <svg class="banner-option-icon">
+                      <use xlink:href="svg/svg/symbols.svg#plus"/>
+                    </svg>
+                    Работаем
+                    <span class="color-grey">по программе</span>
+                    с 2006 года
+                  </div>
+                  <div class="banner-option">
+                    <svg class="banner-option-icon">
+                      <use xlink:href="svg/svg/symbols.svg#plus"/>
+                    </svg>
+                    Сопровождаем
+                    <span class="color-grey">от выбора объекта до регистрации</span>
+                  </div>
+                </div>
+                <a href="#" class="ui-btn ui-btn__primary mfp-link" data-href="./popups/popup-feedback.html">
+                  Оставить заявку
+                  <svg class="ui-btn-icon">
+                    <use xlink:href="svg/svg/symbols.svg#plus"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="banner-image">
+                <img src="./images/banner.png" alt="banner" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="indicators">
+          <div class="container">
+            <div class="indicators-list">
+              <div class="indicators-list-item">
+                <div class="indicators-list-number">
+                  4 526+
+                </div>
+                <div class="indicators-list-title">
+                  сделок
+                </div>
+                <div class="indicators-list-description">
+                  Успешно завершенных обращений
+                </div>
+              </div>
+              <div class="indicators-list-item">
+                <div class="indicators-list-number">
+                  100%
+                </div>
+                <div class="indicators-list-title">
+                  проверка
+                </div>
+                <div class="indicators-list-description">
+                  И застройщиков в базе для подбора условий
+                </div>
+              </div>
+              <div class="indicators-list-item">
+                <div class="indicators-list-number">
+                  300+
+                </div>
+                <div class="indicators-list-title">
+                  банков
+                </div>
+                <div class="indicators-list-description">
+                  И застройщиков в базе для подбора условий
+                </div>
+              </div>
+              <div class="indicators-list-item">
+                <div class="indicators-list-number">
+                  19+
+                </div>
+                <div class="indicators-list-title">
+                  лет
+                </div>
+                <div class="indicators-list-description">
+                  Опыта в работе 
+                  с военной ипотекой
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="services" id="services">
+          <div class="container">
+            <div class="services-wrapper">
+              <div class="services-block">
+                <div class="section-link-title">
+                  Услуги
+                </div>
+                <div class="section-title services-title animate-group">
+                  <div class="section-title-main animate-fade-up-delay">
+                    Ключевые этапы покупки вашей квартиры
+                  </div>
+                  <div class="section-title-sub animate-fade-up-delay">
+                    Мы берём на себя всю ответственность за правильность оформления, чтобы вы не потеряли время, деньги и право на жильё
+                  </div>
+                </div>
+                <a href="#" class="ui-btn ui-btn__primary ui-btn__middle mfp-link" data-href="./popups/popup-feedback.html">
+                  Оставить заявку
+                  <svg class="ui-btn-icon">
+                    <use xlink:href="svg/svg/symbols.svg#plus"/>
+                  </svg>
+                </a>
+                <div class="services-image desktop">
+                  <img src="./images/services.jpg" alt="services" loading="lazy">
+                </div>
+              </div>
+              <div class="services-block">
+                <div class="accordion">
+                  <div class="accordion-item active">
+                    <div class="accordion-item-header">
+                      <div class="accordion-item-title">01 / Формулируем четкие параметры искомой недвижимости</div>
+                      <div class="accordion-item-icon">
+                        <svg>
+                          <use xlink:href="svg/svg/symbols.svg#plus"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion-item-content">
+                      <div class="accordion-item-content-text">
+                        Заполняем опросник на основе именно ваших желанных параметров недвижимости, коттеджа, либо другого объекта недвижимости, который вы ищете. Мы заботимся о том, чтобы максимально облегчить вам поиск жилья.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-item-header">
+                      <div class="accordion-item-title">02 / Строим план действий</div>
+                      <div class="accordion-item-icon">
+                        <svg>
+                          <use xlink:href="svg/svg/symbols.svg#plus"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion-item-content">
+                      <div class="accordion-item-content-text">
+                        Составляем пошаговый план действий для поиска подходящей недвижимости и координируем все этапы с вами.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-item-header">
+                      <div class="accordion-item-title">03 / Заключаем договор услуг</div>
+                      <div class="accordion-item-icon">
+                        <svg>
+                          <use xlink:href="svg/svg/symbols.svg#plus"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion-item-content">
+                      <div class="accordion-item-content-text">
+                        Подписываем официальный договор, где прописаны все условия сотрудничества.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-item-header">
+                      <div class="accordion-item-title">04 / Получаем сертификат НИС и одобрение банка</div>
+                      <div class="accordion-item-icon">
+                        <svg>
+                          <use xlink:href="svg/svg/symbols.svg#plus"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion-item-content">
+                      <div class="accordion-item-content-text">
+                        Помогаем оформить военную ипотеку и получить одобрение банка, если это необходимо.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-item-header">
+                      <div class="accordion-item-title">05 / Происшиваем итоговые критерии искомой недвижимости</div>
+                      <div class="accordion-item-icon">
+                        <svg>
+                          <use xlink:href="svg/svg/symbols.svg#plus"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion-item-content">
+                      <div class="accordion-item-content-text">
+                        Уточняем и корректируем критерии поиска недвижимости на основе ваших пожеланий.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-item-header">
+                      <div class="accordion-item-title">06 / Ищем объекты недвижимости и выбираем</div>
+                      <div class="accordion-item-icon">
+                        <svg>
+                          <use xlink:href="svg/svg/symbols.svg#plus"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion-item-content">
+                      <div class="accordion-item-content-text">
+                        Подбираем подходящие объекты и проводим с вами просмотр наиболее интересных вариантов.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-item-header">
+                      <div class="accordion-item-title">07 / Подписываем соглашение на покупку</div>
+                      <div class="accordion-item-icon">
+                        <svg>
+                          <use xlink:href="svg/svg/symbols.svg#plus"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion-item-content">
+                      <div class="accordion-item-content-text">
+                        Оформляем предварительное соглашение на покупку выбранного объекта.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-item-header">
+                      <div class="accordion-item-title">08 / Вносим задаток за недвижимость</div>
+                      <div class="accordion-item-icon">
+                        <svg>
+                          <use xlink:href="svg/svg/symbols.svg#plus"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion-item-content">
+                      <div class="accordion-item-content-text">
+                        Организуем внесение задатка для резервирования недвижимости.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-item-header">
+                      <div class="accordion-item-title">09 / Проверяем юридическую чистоту объекта</div>
+                      <div class="accordion-item-icon">
+                        <svg>
+                          <use xlink:href="svg/svg/symbols.svg#plus"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion-item-content">
+                      <div class="accordion-item-content-text">
+                        Проводим полную проверку юридической чистоты объекта перед сделкой.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-item-header">
+                      <div class="accordion-item-title">10 / Отправляем объект одобрение банку</div>
+                      <div class="accordion-item-icon">
+                        <svg>
+                          <use xlink:href="svg/svg/symbols.svg#plus"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion-item-content">
+                      <div class="accordion-item-content-text">
+                        Координируем процесс одобрения объекта банком для ипотеки.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-item-header">
+                      <div class="accordion-item-title">11 / Оформляем сделку</div>
+                      <div class="accordion-item-icon">
+                        <svg>
+                          <use xlink:href="svg/svg/symbols.svg#plus"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion-item-content">
+                      <div class="accordion-item-content-text">
+                        Завершаем сделку и регистрируем переход права собственности.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="services-image mobile">
+                  <img src="./images/services.jpg" alt="services" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="quiz">
+          <div class="container">
+            <div class="quiz-wrapper">
+              <div class="quiz-preview">
+                <div class="section-link-title">
+                  Бесплатная консультация
+                </div>
+                <div class="section-title ">
+                  <div class="section-title-main quiz-title animate-fade-up">
+                    Ответьте на несколько вопросов и получите бесплатную консультацию
+                  </div>
+                </div>
+                <img
+                  src="./images/quiz.svg"
+                  alt="quiz"
+                  loading="lazy"
+                  class="quiz-preview-image"
+                >
+              </div>
+              <div class="quiz-content">
+                <div class="quiz-content-header">
+                  <div class="quiz-content-count">
+                    <span>1</span>
+                    <span>7</span>
+                  </div>
+                  <div class="quiz-content-title">
+                    Какой объект недвижимости
+                    вы рассматриваете?
+                  </div>
+                </div>
+                <div class="quiz-content-questions error">
+                  <div class="quiz-content-questions-wrapper">
+                    <label class="ui-checkbox-wrapper">
+                      <input type="checkbox" class="ui-checkbox primry">
+                      Квартира в новостройке
+                    </label>
+                    <label class="ui-checkbox-wrapper">
+                      <input type="checkbox" class="ui-checkbox primry">
+                      Квартира на вторичном рынке
+                    </label>
+                    <label class="ui-checkbox-wrapper">
+                      <input type="checkbox" class="ui-checkbox primry">
+                      Дом с участком
+                    </label>
+                    <label class="ui-checkbox-wrapper">
+                      <input type="checkbox" class="ui-checkbox primry">
+                      Таунхаус
+                    </label>
+                    <label class="ui-checkbox-wrapper">
+                      <input type="checkbox" class="ui-checkbox primry">
+                      Ещё не решил(а)
+                    </label>
+                  </div>
+                  <div class="quiz-content-questions-error color-grey">
+                    Выберите один вариант
+                  </div>
+                </div>
+                <div class="quiz-nav ui-nav">
+                  <a href="#" class="quiz-nav-item ui-nav-item">
+                    <svg class="ui-nav-item-icon ui-nav-item-icon__left">
+                      <use xlink:href="svg/svg/symbols.svg#arrow-right"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="quiz-nav-item ui-nav-item">
+                    <svg class="ui-nav-item-icon ui-nav-item-icon__right">
+                      <use xlink:href="svg/svg/symbols.svg#arrow-right"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="benefits">
+          <div class="container">
+            <div class="benefits-wrapper">
+              <div class="benefits-content">
+                <div class="section-link-title light">
+                  Участникам СВО
+                </div>
+                <div class="section-title benefits-title animate-group">
+                  <div class="section-title-main color-white animate-fade-up-delay">
+                    Льготы и возможности для участников СВО
+                  </div>
+                  <div class="section-title-sub color-light-green animate-fade-up-delay">
+                    Помогаем использовать государственные программы 
+                    и региональные меры поддержки при покупке жилья
+                  </div>
+                </div>
+                <a href="#" class="ui-btn ui-btn__transparent_white mfp-link" data-href="./popups/popup-feedback.html">
+                  Оставить заявку
+                  <svg class="ui-btn-icon">
+                    <use xlink:href="svg/svg/symbols.svg#plus"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="benefits-image">
+                <div class="benefits-picture">
+                  <img src="./images/benefits.png" alt="benefits" loading="lazy">
+                </div>
+                <div class="benefits-options">
+                  <div class="benefits-option">
+                    <svg class="benefits-option-icon">
+                      <use xlink:href="svg/svg/symbols.svg#plus"></use>
+                    </svg>
+                    Поможем
+                    <span class="color-grey">учесть выплаты от государства</span>
+                  </div>
+                  <div class="benefits-option">
+                    <svg class="benefits-option-icon">
+                      <use xlink:href="svg/svg/symbols.svg#plus"></use>
+                    </svg>
+                    Сопровождаем
+                    <span class="color-grey">от выбора объекта до регистрации</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <div class="container">
+            <div class="about-wrapper">
+              <div class="about-title">
+                <div class="about-title-content">
+                  <div class="section-link-title">
+                    О нас
+                  </div>
+                  <div class="section-title-main animate-fade-up">
+                    Делаем то, в чём разбираемся
+                  </div>
+                </div>
+              </div>
+              <div class="about-content">
+                <div class="about-content-text">
+                  <p>
+                    Мы на рынке недвижимости с 1992 года, а с 2006 года специализируемся на сделках по военной ипотеке в Москве и области. Наша команда юристов и риелторов с профильным образованием помогает военнослужащим и их семьям безопасно оформить покупку жилья
+                  </p>
+                  <p>
+                    Консультации проводим очно и онлайн — разберём вашу ситуацию и найдём оптимальное решение
+                  </p>
+                </div>
+                <div class="about-content-items">
+                  <div class="about-content-item animate-group">
+                    <div class="about-content-item-title animate-fade-up-delay">
+                      Больше шансов на одобрение
+                    </div>
+                    <div class="about-content-item-txt animate-fade-up-delay">
+                      И застройщиков в базе для подбора условий
+                    </div>
+                  </div>
+                  <div class="about-content-item animate-group">
+                    <div class="about-content-item-title animate-fade-up-delay">
+                      Работаем в ваших интересах
+                    </div>
+                    <div class="about-content-item-txt animate-fade-up-delay">
+                      Не привязаны к банкам или застройщикам
+                    </div>
+                  </div>
+                  <div class="about-content-item animate-group">
+                    <div class="about-content-item-title animate-fade-up-delay">
+                      ~ 27 дней цикл работы
+                    </div>
+                    <div class="about-content-item-txt animate-fade-up-delay">
+                      Примерное время решения задачи
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team">
+              <div class="team-header">
+                <div class="team-title animate-fade-up">
+                  Команда, которая отвечает за качество
+                </div>
+                <div class="team-nav ui-nav">
+                  <a href="#" class="ui-nav-item team-nav-prev">
+                    <svg class="ui-nav-item-icon ui-nav-item-icon__left">
+                      <use xlink:href="svg/svg/symbols.svg#arrow-right"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="ui-nav-item team-nav-next">
+                    <svg class="ui-nav-item-icon ui-nav-item-icon__right">
+                      <use xlink:href="svg/svg/symbols.svg#arrow-right"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-slider-container">
+                <div class="swiper slider-wrapper team-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="team-card">
+                        <div class="team-card-image">
+                          <img src="./images/realtor.jpg" alt="риэлтор" loading="lazy">
+                        </div>
+                        <div class="team-card-info">
+                          <div class="team-card-title">
+                            Ирина Петрова
+                          </div>
+                          <div class="team-card-description">
+                            Риелтор
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="team-card">
+                        <div class="team-card-image">
+                          <img src="./images/realtor.jpg" alt="риэлтор" loading="lazy">
+                        </div>
+                        <div class="team-card-info">
+                          <div class="team-card-title">
+                            Ирина Петрова
+                          </div>
+                          <div class="team-card-description">
+                            Риелтор
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="team-card">
+                        <div class="team-card-image">
+                          <img src="./images/realtor.jpg" alt="риэлтор" loading="lazy">
+                        </div>
+                        <div class="team-card-info">
+                          <div class="team-card-title">
+                            Ирина Петрова
+                          </div>
+                          <div class="team-card-description">
+                            Риелтор
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="team-card">
+                        <div class="team-card-image">
+                          <img src="./images/realtor.jpg" alt="риэлтор" loading="lazy">
+                        </div>
+                        <div class="team-card-info">
+                          <div class="team-card-title">
+                            Ирина Петрова
+                          </div>
+                          <div class="team-card-description">
+                            Риелтор
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="team-card">
+                        <div class="team-card-image">
+                          <img src="./images/realtor.jpg" alt="риэлтор" loading="lazy">
+                        </div>
+                        <div class="team-card-info">
+                          <div class="team-card-title">
+                            Ирина Петрова
+                          </div>
+                          <div class="team-card-description">
+                            Риелтор
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="team-card">
+                        <div class="team-card-image">
+                          <img src="./images/realtor.jpg" alt="риэлтор" loading="lazy">
+                        </div>
+                        <div class="team-card-info">
+                          <div class="team-card-title">
+                            Ирина Петрова
+                          </div>
+                          <div class="team-card-description">
+                            Риелтор
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="team-card">
+                        <div class="team-card-image">
+                          <img src="./images/realtor.jpg" alt="риэлтор" loading="lazy">
+                        </div>
+                        <div class="team-card-info">
+                          <div class="team-card-title">
+                            Ирина Петрова
+                          </div>
+                          <div class="team-card-description">
+                            Риелтор
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="questions">
+          <div class="container">
+            <div class="questions-header">
+              <div class="section-link-title">
+                FAQ
+              </div>
+              <div class="section-title-main animate-fade-up">
+                Часто задаваемые вопросы
+              </div>
+            </div>
+            <div class="accordion accordion__full">
+              <div class="accordion-item active">
+                <div class="accordion-item-header">
+                  <div class="accordion-item-title">Зачем обращаться к вам, если военная ипотека — государственная программа?</div>
+                  <div class="accordion-item-icon">
+                    <svg>
+                      <use xlink:href="svg/svg/symbols.svg#plus"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="accordion-item-content">
+                  <div class="accordion-item-content-text">
+                    Потому что в сделке участвуют сразу несколько сторон: банк, Росвоенипотека, застройщик или продавец.
+                    Мы знаем требования каждого и помогаем оформить документы так, чтобы сделку одобрили без ошибок
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  <div class="accordion-item-title">Сколько стоит ваша помощь?</div>
+                  <div class="accordion-item-icon">
+                    <svg>
+                      <use xlink:href="svg/svg/symbols.svg#plus"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="accordion-item-content">
+                  <div class="accordion-item-content-text">
+                    Стоимость формируется на консультации и фиксируется в договоре. Вы понимаете, за что платите, ещё до начала работы
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  <div class="accordion-item-title">Можно ли получить консультацию онлайн?</div>
+                  <div class="accordion-item-icon">
+                    <svg>
+                      <use xlink:href="svg/svg/symbols.svg#plus"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="accordion-item-content">
+                  <div class="accordion-item-content-text">
+                    Да. Мы проводим консультации очно и онлайн: разберём вашу ситуацию, проверим документы и сделаем 
+                    пошаговый план действий
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  <div class="accordion-item-title">Вы работаете только с новостройками?</div>
+                  <div class="accordion-item-icon">
+                    <svg>
+                      <use xlink:href="svg/svg/symbols.svg#plus"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="accordion-item-content">
+                  <div class="accordion-item-content-text">
+                    Нет. Мы сопровождаем сделки на первичном и вторичном рынке, а также с домами и участками
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="articles" id="articles">
+          <div class="container">
+            <div class="articles-header">
+              <div>
+                <div class="section-link-title">
+                  Блог
+                </div>
+                <div class="articles-title section-title-main animate-fade-up">
+                  Полезные статьи
+                  <a href="#" class="ui-btn ui-btn__primary articles-watch-all articles-watch-all__desktop">
+                    Смотреть все статьи
+                    <svg class="ui-btn-icon">
+                      <use xlink:href="svg/svg/symbols.svg#plus"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="articles-items">
+              <a href="#" class="articles-item">
+                <div class="articles-item-image">
+                  <img src="./images/article-1.jpg" alt="article" loading="lazy">
+                </div>
+                <div class="articles-item-content">
+                  <div class="articles-item-title">
+                    Алгоритм покупки жилья
+                  </div>
+                  <div class="articles-item-more">
+                    Подробнее
+                    <svg class="articles-item-more-icon">
+                      <use xlink:href="svg/svg/symbols.svg#arrow-right"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="articles-item">
+                <div class="articles-item-image">
+                  <img src="./images/article-2.jpg" alt="article" loading="lazy">
+                </div>
+                <div class="articles-item-content">
+                  <div class="articles-item-title">
+                    Восстановление накоплений после увольнения
+                  </div>
+                  <div class="articles-item-more">
+                    Подробнее
+                    <svg class="articles-item-more-icon">
+                      <use xlink:href="svg/svg/symbols.svg#arrow-right"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="articles-item">
+                <div class="articles-item-image">
+                  <img src="./images/article-3.jpg" alt="article" loading="lazy">
+                </div>
+                <div class="articles-item-content">
+                  <div class="articles-item-title">
+                    Оформление НИС
+                  </div>
+                  <div class="articles-item-more">
+                    Подробнее
+                    <svg class="articles-item-more-icon">
+                      <use xlink:href="svg/svg/symbols.svg#arrow-right"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <a href="#" class="ui-btn ui-btn__primary articles-watch-all articles-watch-all__mobile">
+              Смотреть все статьи
+              <svg class="ui-btn-icon">
+                <use xlink:href="svg/svg/symbols.svg#plus"/>
+              </svg>
+            </a>
+          </div>
+        </section>
+        <section class="calculator">
+          <div class="container">
+            <div class="calculator-wrapper">
+              <div class="calculator-content">
+                <div class="calculator-content-title animate-group">
+                  <div class="section-title-main color-white animate-fade-up-delay">
+                    Рассчитаем ваши возможности по военной ипотеке
+                  </div>
+                  <div class="section-title-sub color-light-green animate-fade-up-delay">
+                    Заполните форму, и мы подготовим
+                    <br>
+                    для вас пошаговый план действий
+                  </div>
+                </div>
+              </div>
+              <div class="calculator-form">
+                <form class="quiz-form">
+                  <div class="quiz-fields">
+                    <div class="ui-form-field">
+                      <input
+                        type="text"
+                        class="ui-input ui-input__white"
+                        placeholder="Имя*"
+                        required
+                      >
+                    </div>
+                    <div class="ui-form-field">
+                      <input
+                        type="tel"
+                        id="phone"
+                        class="ui-input ui-input__white ui-input__phone"
+                        required
+                      >
+                    </div>
+                    <div class="ui-form-field">
+                      <select
+                        name="type"
+                        class="ui-select ui-select__white"
+                        id="type"
+                        placeholder="Тип объекта"
+                      >
+                        <option value="0" disabled selected>Тип объекта</option>
+                        <option value="1">Квартира</option>
+                        <option value="2">Земельный участок</option>
+                        <option value="3">Другое</option>
+                      </select>
+                    </div>
+                    <div class="ui-form-field">
+                      <textarea class="ui-input ui-input__white ui-textarea" placeholder="Комментарий" id="comment"></textarea>
+                    </div>
+                  </div>
+                  <div class="quiz-agreement">
+                    <label class="ui-checkbox-wrapper min white">
+                      <input type="checkbox" class="ui-checkbox bordered-white">
+                      <span class="color-white">
+                        Я даю согласие на
+                        <a href="#" class="color-white">обработку персональных данных</a>
+                      </span>
+                    </label>
+                    <label class="ui-checkbox-wrapper min white">
+                      <input type="checkbox" class="ui-checkbox bordered-white">
+                      <span class="color-white">
+                        Я соглашаюсь с
+                        <a href="#" class="color-white">политикой конфиденциальности</a>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="quiz-nav quiz-nav__bottom ui-nav">
+                    <button type="submit" class="ui-btn ui-btn__white ui-btn__middle">
+                      Отправить
+                      <svg class="ui-btn-icon">
+                        <use xlink:href="svg/svg/symbols.svg#plus"/>
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer" id="footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer-top">
+              <a href="#" class="footer-logo">
+                <img src="./images/logo-footer.svg" alt="logo" loading="lazy">
+              </a>
+              <div class="footer-top-content">
+                <div class="footer-block">
+                  <div class="footer-label">Навигация</div>
+                  <ul>
+                    <li>
+                      <a href="#services">Услуги</a>
+                    </li>
+                    <li>
+                      <a href="#about">О компании</a>
+                    </li>
+                    <li>
+                      <a href="#articles">Блог</a>
+                    </li>
+                    <li>
+                      <a href="#footer">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-block">
+                  <div class="footer-label">Контакты</div>
+                  <div class="footer-contacts">
+                    <a href="tel:+74957997185" class="footer-contacts-item">+7(495) 799-71-85</a>
+                    <a href="mailto:@email.com" class="footer-contacts-item">@email.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div class="footer-bottom-left">
+                <div class="footer-bottom-block">
+                  <div class="footer-info-item">
+                    <div class="footer-label">ИНН</div>
+                    <div>000000000</div>
+                  </div>
+                  <div class="footer-info-item">
+                    <div class="footer-label">ОГРН</div>
+                    <div>000000000</div>
+                  </div>
+                </div>
+                <div class="footer-bottom-block footer-bottom-block__column">
+                  <div class="footer-info-item">
+                    <a href="#">Политика обработки персональных данных</a>
+                  </div>
+                  <div class="footer-info-item">
+                    <a href="#">Политика конфиденциальности</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-bottom-right">
+                <div class="footer-bottom-right-block">
+                  Все права защищены
+                </div>
+                <a href="#" class="footer-bottom-right-block nowrap">
+                  <svg>
+                    <use xlink:href="svg/svg/symbols.svg#union"/>
+                  </svg>
+                  Разработка сайта
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="menu-overlay">
+        <div class="menu">
+          <div class="menu-logo">
+            <img src="./images/logo.svg" alt="logo" loading="lazy">
+            <button class="menu-close">
+              <span></span>
+            </button>
+          </div>
+          <div class="menu-nav">
+            <ul>
+              <li>
+                <a href="#services">Услуги</a>
+              </li>
+              <li>
+                <a href="#about">О компании</a>
+              </li>
+              <li>
+                <a href="#articles">Блог</a>
+              </li>
+              <li>
+                <a href="#footer">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__contacts">
+            <div class="menu__contacts-tel">
+              <a href="tel:+74957997185">+7(495) 799-71-85</a>
+              <span>Москва и область</span>
+            </div>
+            <div class="menu__contacts-consult">
+              <a href="#" class="ui-btn ui-btn__transparent">
+                Получить консультацию
+                <svg class="ui-btn-icon">
+                  <use xlink:href="svg/svg/symbols.svg#plus"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="go-up">
+      <div class="container go-up-container">
+        <button class="go-up-btn">
+          <svg class="go-up-icon">
+            <use xlink:href="svg/svg/symbols.svg#arrow-up"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./scripts/intlTelInput.min.js"></script>
+    <script src="./scripts/swiper-bundle.min.js"></script>
+    <script src="./scripts/jquery.formstyler.js"></script>
+    <script src="./scripts/jquery.magnific-popup.min.js"></script>
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>

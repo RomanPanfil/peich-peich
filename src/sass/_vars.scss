@@ -1,0 +1,127 @@
+// Colors
+$dark_brown: #392313;
+$light_brown: #847569;
+$default_brown: #D4CDC7;
+
+$orange: #FA7836;
+$accent_orange: #EF6925;
+$light_orange: #F9F9F9;
+
+$green: #0C4532;
+$white_line_on_green: #295A49;
+$light_green: #9CB0A6;
+$default_green: #547C6F;
+
+$full_white: #FFFFFF;
+$white: #FBF7F4;
+$dark_white: #F6F0EC;
+
+$error: #CE1414;
+
+// Layouts
+$inner: 1420px;
+$gutter: 30px;
+$block_margin: 0 0 25px;
+
+// Typography ---
+$fontsize: 16;
+$weight: 400;
+$basefont: 'Golos Text';
+$lh: 1.2;
+$th: 1.2;
+$paragraph_margin: 0px 0px 28px;
+
+// headings
+$headings_font_family: $basefont;
+$headings_margin: 40px 0px 40px;
+$headings_font_weight: 500;
+$headings_text_transform: none;
+$h1: 50;
+$h2: 45;
+$h3: 30;
+$h4: 20;
+$h5: 18;
+$h6: $fontsize;
+
+
+
+// Breakpoints
+$desktop-breakpoint: 1440;      // Desktop (резиновая верстка от этого значения)
+$tablet-large-breakpoint: 960;  // Tablet Large
+$tablet-breakpoint: 640;        // Tablet
+$mobile-breakpoint: 390;        // Mobile
+
+// Размеры макетов для каждого брейкпоинта
+$desktop-base: 1440;
+$tablet-large-base: 960;
+$tablet-base: 640;
+$mobile-base: 390;
+
+// Базовый размер шрифта
+$base-font-size: 16;
+
+// Брейкпоинты с единицами
+$desktop-bp: $desktop-breakpoint + 0px;
+$tablet-large-bp: $tablet-large-breakpoint + 0px;
+$tablet-bp: $tablet-breakpoint + 0px;
+$mobile-bp: $mobile-breakpoint + 0px;
+
+// Миксины для медиазапросов
+@mixin desktop {
+  @media (min-width: $desktop-bp) {
+    @content;
+  }
+}
+
+@mixin tablet-large {
+  @media (max-width: #{$desktop-breakpoint}px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet-large-breakpoint}px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$tablet-breakpoint}px) {
+    @content;
+  }
+}
+
+// Функция конвертации пикселей в rem
+// Для desktop (1440px+): масштабируется пропорционально через vw
+// Для остальных брейкпоинтов: фиксированный расчет в rem
+@function p2r($size) {
+  @if ($size == 0) {
+    @return 0;
+  }
+  
+  // Для desktop используем базу 1440px
+  // Результат в rem, который будет масштабироваться через font-size в html
+  @return ($size / $desktop-base) * $desktop-base / $base-font-size + 0rem;
+}
+
+// Дополнительные функции для специфичных брейкпоинтов (если понадобятся)
+@function p2r-tablet-large($size) {
+  @if ($size == 0) {
+    @return 0;
+  }
+  @return ($size / $tablet-large-base) * $tablet-large-base / $base-font-size + 0rem;
+}
+
+@function p2r-tablet($size) {
+  @if ($size == 0) {
+    @return 0;
+  }
+  @return ($size / $tablet-base) * $tablet-base / $base-font-size + 0rem;
+}
+
+@function p2r-mobile($size) {
+  @if ($size == 0) {
+    @return 0;
+  }
+  @return ($size / $mobile-base) * $mobile-base / $base-font-size + 0rem;
+}

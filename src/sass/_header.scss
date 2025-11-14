@@ -1,0 +1,170 @@
+.header {
+    padding-top: p2r(16);
+    padding-bottom: p2r(16);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid $default_brown;
+    background-color: $white;
+    z-index: 99;
+
+    @media(max-width: 768px) {
+        padding-top: p2r(11);
+        padding-bottom: p2r(11);
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media(max-width: 1024px) {
+            justify-content: flex-start;
+        }
+
+        @media(max-width: 768px) {
+            justify-content: space-between;
+        }
+
+        ul {
+            display: flex;
+            gap: p2r(20);
+
+            li {
+                a {           
+                    font-size: p2r(14);
+                    color: $dark_brown;
+
+                    @media (hover: hover) and (pointer: fine) {
+                        &:hover {                    
+                        color: $light_brown;
+                        }
+                    }
+                }
+            }
+
+            @media(max-width: 1024px) {
+                display: none;
+            }  
+        }
+    }
+
+    &__logo {
+        margin-right: p2r(23);
+
+        img {
+            width: p2r(181);
+            height: p2r(34);
+
+            @media(max-width: 1024px) {
+                width: p2r(155);
+                height: p2r(34);
+            }
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        gap: p2r(20);        
+
+        @media(max-width: 1024px) {
+            flex-grow: 1;
+        }
+
+        @media(max-width: 768px) {
+            display: none;
+        }
+
+        &-tel {
+
+            @media(max-width: 1024px) {
+                margin-right: auto;
+            }            
+
+            a {
+                font-size: p2r(14);
+                 color: $dark_brown;
+                display: flex;
+                flex-direction: column;
+
+                @media (hover: hover) and (pointer: fine) {
+                    &:hover {
+                     color: $light_brown;
+                    }
+                }
+            }
+
+            span {               
+                font-size: p2r(14);
+                color: $light_brown;
+            }
+        }
+    }
+
+    .ui-btn {
+        height: p2r(48);
+    }
+
+    &-burger {
+        position: relative;
+        background-color: $green;       
+        flex-basis: p2r(48);    
+        max-width: p2r(48);
+        min-width: p2r(48);
+        height: p2r(48);
+        border: none;
+        cursor: pointer;        
+        outline: none;
+        display: none;
+
+        @media(max-width: 1024px) {
+            display: block;
+            margin-left: p2r(8);
+        }       
+    
+        span {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);        
+          width: p2r(22);
+          height: p2r(1);
+          background-color: $white;
+    
+          &:before,
+          &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: p2r(1);            
+            background-color: $white;     
+            position: absolute;
+            left: 0;
+            transition: transform 0.2s ease-in-out;
+          }
+          &:before {
+            top: p2r(-7);            
+          }
+          &:after {
+            top: p2r(7);           
+          }
+    
+          &.active {
+            transform: translate(-50%, -50%) rotate(45deg);       
+           
+            &:before {
+              top: 0;
+              transform: rotate(-90deg);
+            }
+            &:after {
+              top: 0;
+              transform: rotate(90deg);
+            }
+          }
+        }
+    }
+
+}

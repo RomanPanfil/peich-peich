@@ -1,0 +1,85 @@
+.article { 
+
+    &__page {
+        margin-top: p2r(40);
+        padding-bottom: p2r(100);
+
+        @media(max-width: 1024px) {
+            padding-bottom: p2r(70);
+        }
+
+        @media(max-width: 768px) {
+            margin-top: p2r(30);
+            padding-bottom: p2r(60);
+        }
+    }
+
+    img {
+        width: 100%;
+        display: block;
+        margin-bottom: p2r(45);
+        aspect-ratio: 3;
+        object-fit: cover;
+        object-position: center;
+
+        @media(max-width: 1024px) {
+            aspect-ratio: 1.9;
+        }
+
+        @media(max-width: 768px) {
+            aspect-ratio: 1.3;
+        }
+
+        @media(max-width: 599px) {
+            aspect-ratio: 0.8;
+        }
+    }
+
+    p:has(+ ul) {
+        margin-bottom: 0;
+    }
+
+    ol {
+        @media(max-width: 1024px) {
+            font-size: p2r(14);
+        }
+    }
+
+    ul {
+        margin-bottom: p2r(20);
+
+        @media(max-width: 1024px) {
+            font-size: p2r(14);
+        }
+
+        li {
+            position: relative;            
+            margin-left: p2r(12);
+            padding-left: p2r(12);
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: p2r(8);
+                left: 0;
+                width: p2r(4);
+                height: p2r(4);
+                background-color: $dark_brown;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &__content {
+        max-width: p2r(750);
+
+        &_agree {
+            max-width: p2r(890);
+        }
+
+        &_politics {
+            max-width: p2r(874);
+        }
+    }
+    
+}
