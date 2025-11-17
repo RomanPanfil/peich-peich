@@ -2671,6 +2671,9 @@ table {
   stroke: #FA7836;
   margin-bottom: 1.25rem;
 }
+.banner-option span {
+  color: #847569;
+}
 .banner-image {
   width: 50%;
   -webkit-box-flex: 0;
@@ -3465,6 +3468,9 @@ table {
   height: 1.25rem;
   stroke: #392313;
   margin-bottom: 1.25rem;
+}
+.benefits-option span {
+  color: #847569;
 }
 .benefits-picture {
   position: absolute;

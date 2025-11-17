@@ -287,6 +287,10 @@
       stroke: $orange;
       margin-bottom: p2r(20);
     }
+
+    span {
+      color: $light_brown;
+    }
   }
 
   &-image {
@@ -955,6 +959,10 @@
       height: p2r(20);
       stroke: $dark_brown;
       margin-bottom: p2r(20);
+    }
+
+    span {
+      color: $light_brown;
     }
   }
 
