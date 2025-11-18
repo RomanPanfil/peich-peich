@@ -1185,6 +1185,20 @@ table {
   }
 }
 
+.iti__search-input {
+  outline: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.iti__country-name {
+  color: #392313;
+}
+
+.iti--inline-dropdown .iti__dropdown-content {
+  z-index: 101;
+}
+
 .inner,
 .container {
   max-width: 90rem;

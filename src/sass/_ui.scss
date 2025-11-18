@@ -708,3 +708,18 @@ table {
 		}
 	}
 }
+
+
+.iti__search-input {
+	outline: none;
+	padding-top: p2r(8);
+	padding-bottom: p2r(8);
+}
+
+.iti__country-name {
+	color: $dark_brown;
+}
+
+.iti--inline-dropdown .iti__dropdown-content {
+	z-index: 101;
+}
