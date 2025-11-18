@@ -1485,15 +1485,17 @@
 }
 
 .error {  
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  max-width: p2r(354);
-  padding-top: p2r(40);
-  padding-bottom: p2r(40);
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    max-width: p2r(354);
+    padding-top: p2r(40);
+    padding-bottom: p2r(40);
 
-  @media(max-width: 1024px) {
-    max-width: p2r(282);
+    @media(max-width: 1024px) {
+      max-width: p2r(282);
+    }
   }
 
   &__page {

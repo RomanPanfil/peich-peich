@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   $('.ui-select, .ui-checkbox').styler();
 
-   // Инициализация телефонных полей
+  // Инициализация телефонных полей
   (function() {
     const phoneInputs = document.querySelectorAll(".ui-input__phone");
     
@@ -76,7 +76,224 @@ document.addEventListener('DOMContentLoaded', () => {
         initialCountry: "ru",
         separateDialCode: true,
         formatOnDisplay: true,
-        autoPlaceholder: "off"
+        autoPlaceholder: "off",
+        i18n: {
+          // Основные страны
+          ru: "Россия",
+          us: "США",
+          gb: "Великобритания",
+          de: "Германия",
+          fr: "Франция",
+          it: "Италия",
+          es: "Испания",
+          ua: "Украина",
+          by: "Беларусь",
+          kz: "Казахстан",
+          cn: "Китай",
+          jp: "Япония",
+          kr: "Южная Корея",
+          in: "Индия",
+          tr: "Турция",
+          pl: "Польша",
+          ca: "Канада",
+          au: "Австралия",
+          br: "Бразилия",
+          mx: "Мексика",
+          
+          // Дополнительные страны
+          af: "Афганистан",
+          al: "Албания",
+          dz: "Алжир",
+          as: "Американское Самоа",
+          ad: "Андорра",
+          ao: "Ангола",
+          ai: "Ангилья",
+          ag: "Антигуа и Барбуда",
+          ar: "Аргентина",
+          am: "Армения",
+          aw: "Аруба",
+          at: "Австрия",
+          az: "Азербайджан",
+          bs: "Багамы",
+          bh: "Бахрейн",
+          bd: "Бангладеш",
+          bb: "Барбадос",
+          be: "Бельгия",
+          bz: "Белиз",
+          bj: "Бенин",
+          bm: "Бермуды",
+          bt: "Бутан",
+          bo: "Боливия",
+          ba: "Босния и Герцеговина",
+          bw: "Ботсвана",
+          bn: "Бруней",
+          bg: "Болгария",
+          bf: "Буркина-Фасо",
+          bi: "Бурунди",
+          kh: "Камбоджа",
+          cm: "Камерун",
+          cv: "Кабо-Верде",
+          ky: "Каймановы острова",
+          cf: "ЦАР",
+          td: "Чад",
+          cl: "Чили",
+          co: "Колумбия",
+          km: "Коморы",
+          cg: "Конго",
+          cd: "ДР Конго",
+          ck: "Острова Кука",
+          cr: "Коста-Рика",
+          ci: "Кот-д'Ивуар",
+          hr: "Хорватия",
+          cu: "Куба",
+          cw: "Кюрасао",
+          cy: "Кипр",
+          cz: "Чехия",
+          dk: "Дания",
+          dj: "Джибути",
+          dm: "Доминика",
+          do: "Доминиканская Республика",
+          ec: "Эквадор",
+          eg: "Египет",
+          sv: "Сальвадор",
+          gq: "Экваториальная Гвинея",
+          er: "Эритрея",
+          ee: "Эстония",
+          et: "Эфиопия",
+          fk: "Фолклендские острова",
+          fo: "Фарерские острова",
+          fj: "Фиджи",
+          fi: "Финляндия",
+          ga: "Габон",
+          gm: "Гамбия",
+          ge: "Грузия",
+          gh: "Гана",
+          gi: "Гибралтар",
+          gr: "Греция",
+          gl: "Гренландия",
+          gd: "Гренада",
+          gu: "Гуам",
+          gt: "Гватемала",
+          gn: "Гвинея",
+          gw: "Гвинея-Бисау",
+          gy: "Гайана",
+          ht: "Гаити",
+          hn: "Гондурас",
+          hk: "Гонконг",
+          hu: "Венгрия",
+          is: "Исландия",
+          id: "Индонезия",
+          ir: "Иран",
+          iq: "Ирак",
+          ie: "Ирландия",
+          il: "Израиль",
+          jm: "Ямайка",
+          jo: "Иордания",
+          ke: "Кения",
+          ki: "Кирибати",
+          kp: "КНДР",
+          kw: "Кувейт",
+          kg: "Киргизия",
+          la: "Лаос",
+          lv: "Латвия",
+          lb: "Ливан",
+          ls: "Лесото",
+          lr: "Либерия",
+          ly: "Ливия",
+          li: "Лихтенштейн",
+          lt: "Литва",
+          lu: "Люксембург",
+          mo: "Макао",
+          mk: "Северная Македония",
+          mg: "Мадагаскар",
+          mw: "Малави",
+          my: "Малайзия",
+          mv: "Мальдивы",
+          ml: "Мали",
+          mt: "Мальта",
+          mh: "Маршалловы Острова",
+          mr: "Мавритания",
+          mu: "Маврикий",
+          md: "Молдова",
+          mc: "Монако",
+          mn: "Монголия",
+          me: "Черногория",
+          ms: "Монтсеррат",
+          ma: "Марокко",
+          mz: "Мозамбик",
+          mm: "Мьянма",
+          na: "Намибия",
+          nr: "Науру",
+          np: "Непал",
+          nl: "Нидерланды",
+          nc: "Новая Каледония",
+          nz: "Новая Зеландия",
+          ni: "Никарагуа",
+          ne: "Нигер",
+          ng: "Нигерия",
+          no: "Норвегия",
+          om: "Оман",
+          pk: "Пакистан",
+          pw: "Палау",
+          ps: "Палестина",
+          pa: "Панама",
+          pg: "Папуа-Новая Гвинея",
+          py: "Парагвай",
+          pe: "Перу",
+          ph: "Филиппины",
+          pt: "Португалия",
+          pr: "Пуэрто-Рико",
+          qa: "Катар",
+          ro: "Румыния",
+          rw: "Руанда",
+          ws: "Самоа",
+          sm: "Сан-Марино",
+          st: "Сан-Томе и Принсипи",
+          sa: "Саудовская Аравия",
+          sn: "Сенегал",
+          rs: "Сербия",
+          sc: "Сейшелы",
+          sl: "Сьерра-Леоне",
+          sg: "Сингапур",
+          sk: "Словакия",
+          si: "Словения",
+          sb: "Соломоновы Острова",
+          so: "Сомали",
+          za: "ЮАР",
+          ss: "Южный Судан",
+          lk: "Шри-Ланка",
+          sd: "Судан",
+          sr: "Суринам",
+          sz: "Эсватини",
+          se: "Швеция",
+          ch: "Швейцария",
+          sy: "Сирия",
+          tw: "Тайвань",
+          tj: "Таджикистан",
+          tz: "Танзания",
+          th: "Таиланд",
+          tl: "Восточный Тимор",
+          tg: "Того",
+          to: "Тонга",
+          tt: "Тринидад и Тобаго",
+          tn: "Тунис",
+          tm: "Туркменистан",
+          tv: "Тувалу",
+          ug: "Уганда",
+          ae: "ОАЭ",
+          uy: "Уругвай",
+          uz: "Узбекистан",
+          vu: "Вануату",
+          va: "Ватикан",
+          ve: "Венесуэла",
+          vn: "Вьетнам",
+          ye: "Йемен",
+          zm: "Замбия",
+          zw: "Зимбабве",
+          
+          // Поисковая подсказка
+          searchPlaceholder: "Поиск"
+        }
       });
       
       // Устанавливаем фиксированный placeholder
@@ -442,6 +659,46 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleActions: 'play none none reverse'
           }
         });
+      });
+    });
+  })();
+
+  // квиз, проверка отмеченных чекбоксов
+  (function() {  
+    const quizNavRight = document.querySelector('.ui-nav-item-icon__right');
+    const quizContent = document.querySelector('.quiz-content-questions');
+    const checkboxes = document.querySelectorAll('.ui-checkbox');
+   
+    function hasCheckedCheckbox() {
+      return Array.from(checkboxes).some(checkbox => checkbox.checked);
+    }
+
+    function removeError() {
+      if (quizContent.classList.contains('error')) {
+        quizContent.classList.remove('error');
+      }
+    }
+ 
+    if (quizNavRight) {
+      quizNavRight.closest('.quiz-nav-item').addEventListener('click', function(e) {
+        if (!hasCheckedCheckbox()) {
+          e.preventDefault();
+          quizContent.classList.add('error');
+        } else {
+          removeError();          
+        }
+      });
+    }
+
+    const checkboxWrappers = document.querySelectorAll('.ui-checkbox-wrapper');
+
+    checkboxWrappers.forEach(wrapper => {
+      wrapper.addEventListener('click', function() {
+        setTimeout(() => {
+          if (hasCheckedCheckbox()) {
+            removeError();
+          }
+        }, 50);
       });
     });
   })();

@@ -4120,7 +4120,7 @@ table {
           transform: translate(-50%, -50%);
 }
 
-.error {
+.error-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4136,7 +4136,7 @@ table {
   padding-bottom: 2.5rem;
 }
 @media (max-width: 1024px) {
-  .error {
+  .error-content {
     max-width: 17.625rem;
   }
 }

@@ -663,6 +663,46 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   })();
 
+  // квиз, проверка отмеченных чекбоксов
+  (function() {  
+    const quizNavRight = document.querySelector('.ui-nav-item-icon__right');
+    const quizContent = document.querySelector('.quiz-content-questions');
+    const checkboxes = document.querySelectorAll('.ui-checkbox');
+   
+    function hasCheckedCheckbox() {
+      return Array.from(checkboxes).some(checkbox => checkbox.checked);
+    }
+
+    function removeError() {
+      if (quizContent.classList.contains('error')) {
+        quizContent.classList.remove('error');
+      }
+    }
+ 
+    if (quizNavRight) {
+      quizNavRight.closest('.quiz-nav-item').addEventListener('click', function(e) {
+        if (!hasCheckedCheckbox()) {
+          e.preventDefault();
+          quizContent.classList.add('error');
+        } else {
+          removeError();          
+        }
+      });
+    }
+
+    const checkboxWrappers = document.querySelectorAll('.ui-checkbox-wrapper');
+
+    checkboxWrappers.forEach(wrapper => {
+      wrapper.addEventListener('click', function() {
+        setTimeout(() => {
+          if (hasCheckedCheckbox()) {
+            removeError();
+          }
+        }, 50);
+      });
+    });
+  })();
+
   $(() => {
     gsap.registerPlugin(ScrollTrigger);
 
