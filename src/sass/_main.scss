@@ -354,7 +354,7 @@
       font-weight: 500;
       font-size: p2r(65);
       line-height: 1.1;
-      letter-spacing: -0.3rem;
+      letter-spacing: -0.09rem;
       color: $green;
       margin-bottom: p2r(13);
 
@@ -1370,6 +1370,28 @@
   color: $white;
   background-color: $green;
   padding-top: p2r(100);
+
+  @media(max-width: 1024px) {
+    padding-top: p2r(70);
+  }
+
+  @media(max-width: 768px) {
+    padding-top: p2r(60);
+  }
+
+  &__section {
+    padding-bottom: p2r(100);
+    margin-bottom: p2r(60);
+
+    @media(max-width: 1024px) {
+      padding-bottom: p2r(70);
+    }
+
+    @media(max-width: 768px) {
+      padding-bottom: p2r(60);
+      margin-bottom: p2r(40);
+    }
+  }
 
   &-wrapper {
     display: flex;

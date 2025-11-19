@@ -1,5 +1,13 @@
 .article { 
 
+    &__main {
+        margin-top: p2r(40);       
+
+        @media(max-width: 768px) {
+            margin-top: p2r(30);            
+        }
+    }
+
     &__page {
         margin-top: p2r(40);
         padding-bottom: p2r(100);
@@ -79,6 +87,18 @@
 
         &_politics {
             max-width: p2r(874);
+        }
+    }
+
+    &__section {
+        margin-bottom: p2r(100);
+
+        @media(max-width: 1024px) {
+            margin-bottom: p2r(80);
+        }
+
+        @media(max-width: 768px) {
+            margin-bottom: p2r(60);
         }
     }
     

@@ -129,9 +129,9 @@ table {
 }
 
 .ui-btn {
-	font-size: p2r(14);
+	font-size: p2r(16);
 	color: $white;
-	letter-spacing: 0.03rem;
+	letter-spacing: -0.03rem;
 	outline: none;
 	border: none;	
 	display: flex;
@@ -228,6 +228,10 @@ table {
 				}
 			}
 		}	
+	}
+
+	&-min {
+		font-size: p2r(14);		
 	}
 
 	&__middle {
@@ -487,7 +491,7 @@ table {
 	&-sub {		
 		font-size: p2r(16);
 		line-height: 1.2;
-		letter-spacing: -0.09rem;
+		letter-spacing: -0.03rem;
 		color: $light_brown;
 		max-width: p2r(540);
 
